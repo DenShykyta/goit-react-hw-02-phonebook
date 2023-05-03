@@ -1,0 +1,15 @@
+.filter__text {
+    color: green;
+    font-weight: 500;
+    
+}
+
+.filter__input {
+    margin-left: 10px;
+    padding: 5px;
+    
+}
+
+.filter__input::placeholder {
+    color:green;
+}

@@ -1,0 +1,25 @@
+.contacts__list {
+ list-style: none;
+ width: 300px;
+ padding: 10px;
+ /* box-shadow: inset 0px 0px 10px 5px rgba(101, 101, 212, 1); */
+}
+ .contacts__item {
+
+display:flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.contacts__btn {
+    width: 67px;
+    height: 30px;
+    font-style: italic;
+    border-radius: 8px 0px;
+    box-shadow: rgb(147, 112, 201) 1px 1px 3px 0px;
+}
+
+.contacts__btn:hover {
+        background: linear-gradient(0deg, rgb(153, 124, 177) 44%, rgb(247, 177, 177) 100%);
+        color: red;
+}
