@@ -18,8 +18,8 @@ class App extends Component {
   }
     
   addNewContact = ({ name, number }) => {
-    if (this.state.contacts.some(contact => contact.name === name)) {
-      Notiflix.Notify.info(`${name} is already in contacts!`)
+    if (this.state.contacts.some(contact => contact.name.toLowerCase() === name.toLowerCase() || contact.number === number )) {
+      Notiflix.Notify.info(`${name} or ${number} is already in contacts!`)
       return;
     }
  
@@ -29,7 +29,7 @@ class App extends Component {
       number
     };
     this.setState(prevState => ({
-      contacts: [newContact, ...this.state.contacts]
+      contacts: [newContact, ...prevState.contacts]
     }))
   };
 
