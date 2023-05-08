@@ -18,7 +18,7 @@ export default function ContactList({ contacts, onDel }) {
   );
 }
 
-ContactList.popTypes = {
+ContactList.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

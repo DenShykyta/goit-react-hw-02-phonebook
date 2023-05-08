@@ -63,6 +63,6 @@ class Form extends Component {
 
 export default Form;
 
-Form.popTypes = {
+Form.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };
